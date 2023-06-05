@@ -3,7 +3,6 @@
 $id = $_GET["idDetalhes"];
 
 //CONECTA AO MYSQL 
-//$conn = mysqli_connect("localhost", "id20741728_jessica", "Admin@23", "id20741728_banco");
 $conn = mysqli_connect("localhost", "root", "", "bancophp");
 
 //EXIBE IMAGEM 
