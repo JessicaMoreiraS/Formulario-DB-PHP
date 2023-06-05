@@ -1,5 +1,4 @@
 <?php 
-    //$conexao = mysqli_connect("localhost", "id20741728_jessica", "Admin@23", "id20741728_banco");
     $conexao = mysqli_connect("localhost", "root", "", "bancophp");
     if(isset($_GET['id']) > 0){
         $idEventoCancelado =  $_GET['id'];
