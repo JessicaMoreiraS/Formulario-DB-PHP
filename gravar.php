@@ -9,7 +9,6 @@ if($imagem != NULL) {
 		$tamanhoImg = filesize($nomeFinal);
 
 		$mysqlImg = addslashes(fread(fopen($nomeFinal, "r"), $tamanhoImg));
-        //$conn = mysqli_connect("localhost", "id20741728_jessica", "Admin@23", "id20741728_banco");
         $conn= mysqli_connect("localhost", "root", "", "bancophp");
 
 		$sql = "UPDATE eventostech SET imagem_evento = '$mysqlImg' WHERE idevento = ".$idEvento.";";
