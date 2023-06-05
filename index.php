@@ -50,7 +50,7 @@
     <script src="js/script.js"></script>
     <?php
         session_start();
-        //$conn = mysqli_connect("localhost", "nome_do_usuario", "senha", "nome_do_banco");   // Criar a conexão  - conn é de conexao / mysqli_connect() é padrão
+        //$conn = mysqli_connect("localhost", "id20741728_jessica", "Admin@23", "id20741728_banco");   // Criar a conexão  - conn é de conexao / mysqli_connect() é padrão
         $conn = mysqli_connect("localhost", "root", "", "bancophp");   // Criar a conexão  - xampp
         $nomeTabela = 'usuarioseventotech';
 
