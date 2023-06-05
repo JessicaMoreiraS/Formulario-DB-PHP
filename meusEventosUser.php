@@ -14,7 +14,6 @@
 </head>
 <body>
 <?php
-    //$conexao = mysqli_connect("localhost", "id20741728_jessica", "Admin@23", "id20741728_banco");   // Criar a conexão  - conn é de conexao / mysqli_connect() é padrão
     $conexao = mysqli_connect("localhost", "root", "", "bancophp");
 
     if(isset($_GET['id'])){
