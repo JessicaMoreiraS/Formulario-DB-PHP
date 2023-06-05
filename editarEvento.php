@@ -28,7 +28,6 @@
             <?php
             if(isset($_GET['id']) > 0){
                     $idEventoEdit = $_GET['id'];
-                    //$conexao = mysqli_connect("localhost", "id20741728_jessica", "Admin@23", "id20741728_banco");
                     $conexao = mysqli_connect("localhost", "root", "", "bancophp");   // Criar a conexão  - xampp
                     $comandoEventoMostrar  = 'SELECT * FROM eventostech WHERE idevento = '.$idEventoEdit.'; ';
                     $mostrar = mysqli_query($conexao, $comandoEventoMostrar);
@@ -101,7 +100,6 @@
         
             $nomeFinal = time().'.jpg';
             
-            //$conn = mysqli_connect("localhost", "id20741728_jessica", "Admin@23", "id20741728_banco");
             $conn= mysqli_connect("localhost", "root", "", "bancophp");
             $sql = "UPDATE eventostech SET nome_evento='$nome', data_evento='$data', local_evento='$local', horario_evento='$hora', preco_evento='$preco', descricao_evento='$descricao' WHERE eventostech.idevento = ".$idEventoEdit.";";
             
