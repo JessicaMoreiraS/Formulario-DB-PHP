@@ -31,7 +31,7 @@
                 <form method="POST">
                     <select name="eventoEscolhido" class="eventoEscolhido" onchange="window.location.href='presencaGestor.php?idDetalhes='+value ">
                         <?php
-                        //$conexao = mysqli_connect("localhost", "id20741728_jessica", "Admin@23", "id20741728_banco");
+                        
                         $conexao = mysqli_connect("localhost", "root", "", "bancophp");   // Criar a conexão  - xampp
                         if(isset($_GET['idDetalhes']) > 0){
                             $idDetalhes = $_GET['idDetalhes'];
@@ -72,7 +72,6 @@
                     
                     <tbody>
                     <?php
-                        //$conn = mysqli_connect("localhost", "id20741728_jessica", "Admin@23", "id20741728_banco");   // Criar a conexão  - conn é de conexao / mysqli_connect() é padrão
                         $conn = mysqli_connect("localhost", "root", "", "bancophp");   // Criar a conexão  - xampp
                         
                         if($_SERVER["REQUEST_METHOD"] == "POST"){   
